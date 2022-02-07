@@ -9,10 +9,10 @@ int main(){
     cout <<"**************JOGO DO JOKENPO***************" << endl;
     cout <<"********************************************" << endl;
 
-//////////***Iniciação***//////////
+//////////***Inicio***//////////
 
-    cout <<"Escolha o modo de jogo"<< endl;
-    cout <<"Melhor de 3 (3) ou Jogo único (1)" << endl;
+   /* cout <<"Escolha o modo de jogo"<< endl;
+    cout <<"Melhor de 3 (3) ou Jogo ï¿½nico (1)" << endl;
     cout <<"Digite 3 ou 1" << endl;
     
     int modo; 
@@ -26,16 +26,16 @@ int main(){
 
     else{
       cout <<"Modo de jogo: MORTE SUBITA"<< endl;
-    }
+    } */
 
     char escolha; //escolha do jogador
-    int escolhaNPC; //valor aleatório entre 0 e 3
+    int escolhaNPC; //valor aleatÃ³rio entre 0 e 3
     char escolhaNPCPLT; //escolha do NPC entre Pedra Papel ou Tesoura
     char escolhaNPCPLTDiga; //o que o Programa vai exbiri como reposta do computadpr
-    srand(time(NULL)); //a semente dos números aleatórios, a partir de um contador de tempo
+    srand(time(NULL)); //a semente dos nÃºmeros aleatï¿½rios, a partir de um contador de tempo
 
 
-    if (melhorDeTres) {
+    //if (melhorDeTres) {
        cout <<"Escolha PEDRA (P), PAPEL (L), ou Tesoura (T)" << endl;
        cout << "Digite: P, L ou T" << endl;
       cin >> escolha;
@@ -59,9 +59,11 @@ int main(){
           } 
 
 
-          ///testes de comparação
+          ///testes de comparaÃ§Ã£o
           if (escolha == escolhaNPCPLT){
             cout <<"O jogo empatou" << endl;
+            cout <<endl;
+            return main();
           }
           else if ((escolha = 'P') && (escolhaNPCPLT = 'L')){
             cout <<"O Computador ganhou" << endl;
@@ -90,6 +92,6 @@ int main(){
         cout <<"Fim de jogo";
 
 
-    }
+    
 
 }
